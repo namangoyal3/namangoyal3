@@ -16,7 +16,7 @@ I turn messy systems into products people can act on. Across 6.5+ years in B2C a
 
 ## Evidence, not adjectives
 
-- Scaled UPI QR infrastructure across **100K POS devices** and major banking and payment partners.
+- Scaled UPI QR infrastructure across **5 lakh (500K) POS devices** and major banking and payment partners.
 - Built an agentic gateway-integration workflow that moved one integration from **three months to two days**.
 - Shipped an Internshala homepage revamp with **5× certification leads, 3× Placement Guarantee leads, and 30% lower bounce**.
 - Built a PM learning system used by **200+ product managers**, with **300+ lessons** and **2K monthly organic visits within 90 days**.
