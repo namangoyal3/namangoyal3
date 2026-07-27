@@ -64,6 +64,33 @@ Scores are my estimate of *your achievable ceiling in 24h*, per rubric criterion
 
 \* Fit score is low **only because a partner is unlikely to bring this exact problem** — if one does (e.g. a govt-adjacent partner), it jumps to ~8.7 weighted and becomes the pick.
 
+### UPDATE (27 Jul): Partners are announced — InMobi | Glance, Atlys, Sony LIV
+
+ClickHouse's own Click-a-thon blog and event page confirm three partners, "each bringing real engineering challenges to the floor," with problem statements **co-authored with strategic ClickHouse customers** and anonymised datasets + starter repos delivered on 1 Aug. What we know about each partner's production stack lets us predict the statements with high confidence:
+
+**InMobi | Glance** (adtech + lock-screen content; ~250B ad requests and ~30B events/day; already migrated publisher reporting to ClickHouse in "Project Velocity" — P99 from 60s → <3s, cost $40k → $8k/month, 400K+ queries/day over 10TB):
+- *Real-Time Analytics:* sub-second advertiser/publisher-facing reporting over billions of ad events — essentially a miniature Project Velocity (a prior ClickHouse hackathon problem was literally "derived from InMobi and Glance's production systems")
+- *Real-Time Analytics / Agentic:* **invalid-traffic / click-fraud detection** on the ad event stream → maps 1:1 to archetype #1 (fraud), adtech flavour
+- *Agentic AI:* campaign-analyst agent — "why did my eCPM drop 30% in Indonesia last night?" answered with real SQL over ad data (LibreChat + MCP)
+- *Glance:* lock-screen content engagement & recommendation analytics at hundreds-of-millions-of-devices scale
+
+**Sony LIV** (OTT streaming; ingests tens of millions of video QoS/QoE events into ClickHouse Cloud today; live cricket drives 50M+ concurrent viewers):
+- *Observability:* **real-time QoE/QoS monitoring and anomaly detection during live-sports concurrency spikes** — detect buffering storms, CDN/ISP-level degradation, root-cause within seconds (ClickStack is the natural core) → maps to archetype #2 (AI SRE)
+- *Agentic AI:* an AI-SRE agent that watches playback telemetry and diagnoses "viewers in Hyderabad on Airtel are rebuffering" before the ops team's phones ring
+- *Real-Time Analytics:* live audience/concurrency dashboards, ad-break delivery analytics
+
+**Atlys** (visa platform; predictive approval/rejection engine; document automation across 150+ countries):
+- *Agentic AI:* **visa-outcome copilot** — approval-likelihood and timeline prediction over anonymised application data, plus an applicant/ops-facing chat agent (LibreChat) with every LLM decision traced in Langfuse
+- *Real-Time Analytics / Warehousing:* application-funnel and embassy-SLA analytics; unifying the "traveler identity graph" event stream in ClickHouse
+- *Highest human-impact story of the three* (people's travel, jobs, family reunification depend on visa outcomes) — but the smallest raw-scale story
+
+**Revised pick order given the partners:**
+1. **Sony LIV QoE observability + AI-SRE agent** — ClickStack becomes genuinely central (not bolted on), the 50M-concurrent-cricket-viewers scale story is spectacular on stage, and our all-four architecture fits without modification. Archetype #2, now with a named partner.
+2. **InMobi invalid-traffic/fraud detection or real-time reporting** — biggest data-scale story of the event (250B requests/day); fraud variant = our archetype #1. Risk: this will be the most crowded statement (caps!).
+3. **Atlys visa copilot** — pick this if you want the human-impact narrative and the Agentic-AI track is your team's strength; Langfuse integration is deepest here (LLM document decisions need tracing/eval most).
+
+The rest of this section's archetype analysis still applies — these partner problems ARE the archetypes with company names attached.
+
 ### Why #1 wins: fraud detection is where "huge human impact" and "rubric-maxing" finally overlap
 
 You asked for the problem that echoes a real problem and has huge impact on people's lives. **Real-time payment fraud is that problem, and it's also the rubric-optimal one:**
@@ -180,6 +207,10 @@ At 12:00 pm, statements drop. You have minutes. Score each statement 1–5 on fi
 ## Sources
 
 - [Click-a-thon coverage — problem statements sourced from production environments (TipRanks)](https://www.tipranks.com/news/private-companies/clickhouse-showcases-real-time-analytics-focus-with-in-person-hackathon)
+- [Click-a-thon 2026 official blog — partners InMobi | Glance, Atlys, Sony LIV](https://clickhouse.com/blog/click-a-thon-2026) · [Event page](https://clickhouse.com/clickathon/india2026)
+- [InMobi Project Velocity: 20x faster queries, 80% cost savings with ClickHouse](https://clickhouse.com/blog/inmobi) · [TipRanks case-study coverage](https://www.tipranks.com/news/private-companies/clickhouse-highlighted-as-core-analytics-engine-in-inmobi-project-velocity-case-study)
+- [Sony LIV: tens of millions of streaming events in ClickHouse Cloud for QoS/QoE (ClickHouse use cases)](https://clickhouse.com/use-cases) · [50M+ concurrent live-streaming viewers context (Last9)](https://last9.io/customers/reliable-observability-for-50-million-concurrent-live-streaming-viewers/)
+- [Atlys predictive visa engine and $36M Series C (Inc42)](https://inc42.com/buzz/visa-processing-platform-atlys-bags-36-mn-to-enter-new-international-markets/) · [Forbes profile](https://www.forbes.com/sites/davidprosser/2025/02/06/opening-up-the-world-with-digital-visa-platform-atlys/)
 - [ClickHouse — AWS MCP Hackathon SF highlights](https://clickhouse.com/blog/aws-mcp-hackathon-san-francisco) · [NYC AI Agents Hackathon](https://clickhouse.com/blog/nyc-ai-agents-hackathon) · [ClickStack agentic observability](https://clickhouse.com/clickstack/agentic-observability) · [AI SRE observability blog](https://clickhouse.com/blog/ai-sre-observability-architecture)
 - [UPI fraud FY26 ₹805 cr, 10.64 lakh cases (The420/Parliament data)](https://the420.in/india-upi-fraud-data-fy26-parliament-digital-payments/) · [Madhyamam](https://madhyamamonline.com/india/upi-linked-frauds-amount-to-rs-805-crore-far-fy26-govt-1477281)
 - [UPI statistics — 21.7B txns Jan 2026 (Demandsage)](https://www.demandsage.com/upi-statistics/) · [GrabOn UPI stats](https://www.grabon.in/indulge/tech/upi-statistics/)
