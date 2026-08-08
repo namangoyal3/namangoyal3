@@ -9,7 +9,7 @@ import { theme } from "../../theme";
 const W = 720;
 const H = 1280;
 const CX = 360; // constellation center, sits inside the top-58% crop band
-const CY = 380;
+const CY = 390;
 const N = 74;
 const HUBS = 5;
 const MAX_DEPTH = 2; // origin + two rings light up
@@ -26,9 +26,9 @@ type GraphData = {
 const buildGraph = (): GraphData => {
   // 2-3 organic gaussian-ish blobs instead of a ring
   const centers = [
-    { x: CX - 55, y: CY - 70, s: 125 },
-    { x: CX + 90, y: CY + 35, s: 108 },
-    { x: CX - 45, y: CY + 120, s: 92 },
+    { x: CX - 85, y: CY - 105, s: 185 },
+    { x: CX + 135, y: CY + 50, s: 160 },
+    { x: CX - 70, y: CY + 175, s: 135 },
   ];
   // sum of two uniforms ≈ triangular (gaussian-ish), centered on 0
   const gauss = (seed: string, spread: number) => (random(`${seed}a`) + random(`${seed}b`) - 1) * spread * 1.7;
@@ -45,7 +45,7 @@ const buildGraph = (): GraphData => {
     });
   }
   // node 0 is the labeled origin hub — pin it upper-left of center like the reference
-  nodes[0] = { x: CX - 68, y: CY - 78, r: 5.5, hub: true };
+  nodes[0] = { x: CX - 100, y: CY - 115, r: 5.5, hub: true };
 
   const seen = new Set<string>();
   const edges: [number, number][] = [];
