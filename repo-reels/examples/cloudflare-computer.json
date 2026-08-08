@@ -1,0 +1,16 @@
+[
+  {
+    "fullName": "cloudflare/computer",
+    "name": "computer",
+    "url": "https://github.com/cloudflare/computer",
+    "description": "Give your agent a computer — a virtual filesystem living inside a Durable Object, with pluggable execution backends",
+    "stars": 6400,
+    "forks": 325,
+    "language": "TypeScript",
+    "license": "MIT",
+    "version": null,
+    "topics": ["packages/dofs", "packages/computer", "packages/computerd", "examples/container", "examples/worker-shell", "examples/worker-javascript", "docs"],
+    "tagline": "Give your agent a computer.",
+    "metrics": ["6.4k stars in 3 days", "#1 Trending · Aug 5", "MIT · TypeScript"]
+  }
+]
