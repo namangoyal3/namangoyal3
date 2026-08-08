@@ -1,0 +1,44 @@
+[
+  {
+    "fullName": "acme/ponytail",
+    "name": "ponytail",
+    "url": "https://github.com/acme/ponytail",
+    "description": "Optimizes your AI coding output, cutting token usage without losing accuracy",
+    "stars": 73000,
+    "forks": 4100,
+    "language": "TypeScript",
+    "license": "MIT",
+    "version": "v4.8.4",
+    "topics": ["ai", "agents", "cli", "optimizer"],
+    "tagline": "He says nothing. He writes one line. It works.",
+    "metrics": ["~54% less code (up to 94%)", "~20% cheaper", "~27% faster"]
+  },
+  {
+    "fullName": "acme/claude-mem",
+    "name": "claude-mem",
+    "url": "https://github.com/acme/claude-mem",
+    "description": "Persistent memory compression system for coding agents",
+    "stars": 68000,
+    "forks": 2600,
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "version": "v2.1.0",
+    "topics": ["memory", "context", "sessions", "agents"],
+    "tagline": "Remembers every session, so you never re-explain a thing.",
+    "metrics": ["68k stars in 6 months", "#1 Repository of the Day"]
+  },
+  {
+    "fullName": "acme/second-brain",
+    "name": "second-brain",
+    "url": "https://github.com/acme/second-brain",
+    "description": "A vault that rewrites itself — links every file and function across your codebase",
+    "stars": 31000,
+    "forks": 1200,
+    "language": "Python",
+    "license": "MIT",
+    "version": "v0.11.1",
+    "topics": ["knowledge-graph", "vault", "notes", "agents", "wiki"],
+    "tagline": "Turns your codebase into a second brain.",
+    "metrics": ["44 commands", "4 scheduled agents", "nothing slips through cracks"]
+  }
+]

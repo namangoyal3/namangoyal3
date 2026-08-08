@@ -1,0 +1,6 @@
+node_modules/
+out/
+public/avatar.mp4
+public/avatar-*.mp4
+.env
+*.log
