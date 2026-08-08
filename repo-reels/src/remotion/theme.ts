@@ -11,9 +11,9 @@ export const theme = {
   white: "#FFFFFF",
   dim: "rgba(255,255,255,0.55)",
 
-  serif: `Georgia, 'Times New Roman', 'DejaVu Serif', serif`,
-  sans: `'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif`,
-  mono: `'SF Mono', 'Fira Code', 'DejaVu Sans Mono', Menlo, monospace`,
+  serif: `'Playfair Display', Georgia, 'Times New Roman', serif`,
+  sans: `'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif`,
+  mono: `'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, monospace`,
 
   radius: 20,
 } as const;

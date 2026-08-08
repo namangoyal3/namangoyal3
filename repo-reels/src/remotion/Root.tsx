@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import "./fonts";
 import { RepoReel, defaultTimeline } from "./RepoReel";
 import type { Timeline } from "../types";
 
