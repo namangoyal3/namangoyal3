@@ -1,7 +1,0 @@
-node_modules/
-out*/
-.whisper/
-public/avatar.mp4
-public/avatar-*.mp4
-.env
-*.log
