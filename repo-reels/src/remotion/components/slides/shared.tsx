@@ -3,25 +3,51 @@ import { spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { theme } from "../../theme";
 
 export const PixelMascot: React.FC<{ size?: number }> = ({ size = 64 }) => {
-  // 8-bit critter in the accent clay — the reference's signature detail.
+  // 8-bit critter matching the reference: wide clay body, raised head-block on
+  // the top right, two square dark eyes, stub arms on both sides, four legs.
+  // Grid is 12 cols x 7 rows. X = clay body, E = dark eye.
   const G = [
-    "..XX..XX..",
-    "..XXXXXX..",
-    ".XXXXXXXX.",
-    ".XX.XX.XX.",
-    ".XXXXXXXX.",
-    "..XXXXXX..",
-    ".X.X..X.X.",
-    "X..X..X..X",
+    "......XXX...",
+    ".XXXXXXXXXX.",
+    "XXEXXXXEXXXX",
+    "XXXXXXXXXXXX",
+    ".XXXXXXXXXX.",
+    ".XXXXXXXXXX.",
+    ".X..X..X..X.",
   ];
-  const cell = size / 10;
+  const cell = size / 12;
+  const bleed = cell * 0.06; // hide antialiasing seams between adjacent cells
+  const body: React.ReactNode[] = [];
+  const eyes: React.ReactNode[] = [];
+  G.forEach((row, y) => {
+    // merge consecutive body cells into single rects (fewer seams)
+    let run = -1;
+    for (let x = 0; x <= row.length; x++) {
+      const c = row[x];
+      const isBody = c === "X" || c === "E";
+      if (isBody && run < 0) run = x;
+      if (!isBody && run >= 0) {
+        body.push(
+          <rect
+            key={`b${y}-${run}`}
+            x={run * cell - bleed}
+            y={y * cell - bleed}
+            width={(x - run) * cell + bleed * 2}
+            height={cell + bleed * 2}
+            fill={theme.clay}
+          />,
+        );
+        run = -1;
+      }
+      if (c === "E") {
+        eyes.push(<rect key={`e${y}-${x}`} x={x * cell} y={y * cell} width={cell} height={cell} fill="#1A0E0B" />);
+      }
+    }
+  });
   return (
-    <svg width={size} height={(size * 8) / 10} style={{ display: "block" }}>
-      {G.flatMap((row, y) =>
-        row.split("").map((c, x) =>
-          c === "X" ? <rect key={`${x}-${y}`} x={x * cell} y={y * cell} width={cell} height={cell} fill={theme.clay} /> : null,
-        ),
-      )}
+    <svg width={size} height={cell * 7} viewBox={`0 0 ${size} ${cell * 7}`} style={{ display: "block" }} shapeRendering="crispEdges">
+      {body}
+      {eyes}
     </svg>
   );
 };
