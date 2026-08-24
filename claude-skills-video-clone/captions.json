@@ -1,0 +1,2307 @@
+[
+ {
+  "sf": 9,
+  "ef": 16,
+  "lines": [
+   {
+    "text": "has over",
+    "y": 575,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 17,
+  "ef": 19,
+  "lines": [
+   {
+    "text": "11,876",
+    "y": 488,
+    "style": "sans",
+    "size": 60,
+    "color": [
+     10,
+     10,
+     10
+    ],
+    "dx": 50
+   },
+   {
+    "text": "skills",
+    "y": 540,
+    "style": "serif-i",
+    "size": 54,
+    "color": [
+     214,
+     116,
+     87
+    ],
+    "dx": 95
+   }
+  ]
+ },
+ {
+  "sf": 20,
+  "ef": 22,
+  "lines": [
+   {
+    "text": "36,854",
+    "y": 488,
+    "style": "sans",
+    "size": 60,
+    "color": [
+     10,
+     10,
+     10
+    ],
+    "dx": 50
+   },
+   {
+    "text": "skills",
+    "y": 540,
+    "style": "serif-i",
+    "size": 54,
+    "color": [
+     214,
+     116,
+     87
+    ],
+    "dx": 95
+   }
+  ]
+ },
+ {
+  "sf": 23,
+  "ef": 25,
+  "lines": [
+   {
+    "text": "56,564",
+    "y": 488,
+    "style": "sans",
+    "size": 60,
+    "color": [
+     10,
+     10,
+     10
+    ],
+    "dx": 50
+   },
+   {
+    "text": "skills",
+    "y": 540,
+    "style": "serif-i",
+    "size": 54,
+    "color": [
+     214,
+     116,
+     87
+    ],
+    "dx": 95
+   }
+  ]
+ },
+ {
+  "sf": 26,
+  "ef": 28,
+  "lines": [
+   {
+    "text": "72,548",
+    "y": 488,
+    "style": "sans",
+    "size": 60,
+    "color": [
+     10,
+     10,
+     10
+    ],
+    "dx": 50
+   },
+   {
+    "text": "skills",
+    "y": 540,
+    "style": "serif-i",
+    "size": 54,
+    "color": [
+     214,
+     116,
+     87
+    ],
+    "dx": 95
+   }
+  ]
+ },
+ {
+  "sf": 29,
+  "ef": 31,
+  "lines": [
+   {
+    "text": "88,524",
+    "y": 488,
+    "style": "sans",
+    "size": 60,
+    "color": [
+     10,
+     10,
+     10
+    ],
+    "dx": 50
+   },
+   {
+    "text": "skills",
+    "y": 540,
+    "style": "serif-i",
+    "size": 54,
+    "color": [
+     214,
+     116,
+     87
+    ],
+    "dx": 95
+   }
+  ]
+ },
+ {
+  "sf": 32,
+  "ef": 48,
+  "lines": [
+   {
+    "text": "100,000",
+    "y": 488,
+    "style": "sans",
+    "size": 60,
+    "color": [
+     10,
+     10,
+     10
+    ],
+    "dx": 50
+   },
+   {
+    "text": "skills",
+    "y": 540,
+    "style": "serif-i",
+    "size": 54,
+    "color": [
+     214,
+     116,
+     87
+    ],
+    "dx": 95
+   }
+  ]
+ },
+ {
+  "sf": 49,
+  "ef": 56,
+  "lines": [
+   {
+    "text": "but",
+    "y": 890,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 57,
+  "ef": 71,
+  "lines": [
+   {
+    "text": "honestly",
+    "y": 890,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 72,
+  "ef": 81,
+  "lines": [
+   {
+    "text": "you only",
+    "y": 890,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 82,
+  "ef": 90,
+  "lines": [
+   {
+    "text": "need",
+    "y": 890,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 91,
+  "ef": 97,
+  "lines": [
+   {
+    "text": "five",
+    "y": 890,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 98,
+  "ef": 101,
+  "lines": [
+   {
+    "text": "five of",
+    "y": 890,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 102,
+  "ef": 107,
+  "lines": [
+   {
+    "text": "five of them",
+    "y": 890,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 108,
+  "ef": 133,
+  "lines": [
+   {
+    "text": "skill no #1",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 134,
+  "ef": 139,
+  "lines": [
+   {
+    "text": "skill no #1",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   },
+   {
+    "text": "find",
+    "y": 978,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 140,
+  "ef": 144,
+  "lines": [
+   {
+    "text": "skill no #1",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   },
+   {
+    "text": "find skills",
+    "y": 978,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 145,
+  "ef": 156,
+  "lines": [
+   {
+    "text": "you just",
+    "y": 1000,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 157,
+  "ef": 169,
+  "lines": [
+   {
+    "text": "tell it",
+    "y": 1000,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 170,
+  "ef": 174,
+  "lines": [
+   {
+    "text": "you're",
+    "y": 1000,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 175,
+  "ef": 186,
+  "lines": [
+   {
+    "text": "building",
+    "y": 1000,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 187,
+  "ef": 194,
+  "lines": [
+   {
+    "text": "it'll",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 195,
+  "ef": 201,
+  "lines": [
+   {
+    "text": "search",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 202,
+  "ef": 208,
+  "lines": [
+   {
+    "text": "its",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 209,
+  "ef": 220,
+  "lines": [
+   {
+    "text": "entire",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 221,
+  "ef": 228,
+  "lines": [
+   {
+    "text": "skill",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 229,
+  "ef": 240,
+  "lines": [
+   {
+    "text": "library",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 248,
+  "ef": 256,
+  "lines": [
+   {
+    "text": "the right",
+    "y": 810,
+    "style": "serif-i",
+    "size": 64,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 257,
+  "ef": 264,
+  "lines": [
+   {
+    "text": "ones",
+    "y": 810,
+    "style": "serif-i",
+    "size": 64,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 265,
+  "ef": 272,
+  "lines": [
+   {
+    "text": "for you",
+    "y": 810,
+    "style": "serif-i",
+    "size": 64,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 273,
+  "ef": 283,
+  "lines": [
+   {
+    "text": "and even",
+    "y": 810,
+    "style": "serif-i",
+    "size": 64,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 284,
+  "ef": 296,
+  "lines": [
+   {
+    "text": "install",
+    "y": 810,
+    "style": "serif-i",
+    "size": 64,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 297,
+  "ef": 305,
+  "lines": [
+   {
+    "text": "them on",
+    "y": 810,
+    "style": "serif-i",
+    "size": 64,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 306,
+  "ef": 322,
+  "lines": [
+   {
+    "text": "your behalf",
+    "y": 810,
+    "style": "serif-i",
+    "size": 64,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 323,
+  "ef": 345,
+  "lines": [
+   {
+    "text": "skill no #2",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 346,
+  "ef": 360,
+  "lines": [
+   {
+    "text": "skill no #2",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   },
+   {
+    "text": "Superpowers",
+    "y": 978,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 361,
+  "ef": 370,
+  "lines": [
+   {
+    "text": "you just",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 371,
+  "ef": 377,
+  "lines": [
+   {
+    "text": "give it",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 378,
+  "ef": 390,
+  "lines": [
+   {
+    "text": "a task",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 391,
+  "ef": 396,
+  "lines": [
+   {
+    "text": "and",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 397,
+  "ef": 407,
+  "lines": [
+   {
+    "text": "it forces",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 408,
+  "ef": 416,
+  "lines": [
+   {
+    "text": "Claude",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 417,
+  "ef": 433,
+  "lines": [
+   {
+    "text": "to slow",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 434,
+  "ef": 442,
+  "lines": [
+   {
+    "text": "down",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 475,
+  "ef": 479,
+  "lines": [
+   {
+    "text": "and",
+    "y": 640,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 480,
+  "ef": 486,
+  "lines": [
+   {
+    "text": "check",
+    "y": 640,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 487,
+  "ef": 498,
+  "lines": [
+   {
+    "text": "its own",
+    "y": 640,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 499,
+  "ef": 503,
+  "lines": [
+   {
+    "text": "work",
+    "y": 640,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 504,
+  "ef": 511,
+  "lines": [
+   {
+    "text": "before",
+    "y": 640,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 512,
+  "ef": 520,
+  "lines": [
+   {
+    "text": "actually",
+    "y": 640,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 521,
+  "ef": 529,
+  "lines": [
+   {
+    "text": "touching",
+    "y": 640,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 530,
+  "ef": 545,
+  "lines": [
+   {
+    "text": "the project",
+    "y": 640,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 546,
+  "ef": 558,
+  "lines": [
+   {
+    "text": "itself",
+    "y": 640,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 559,
+  "ef": 579,
+  "lines": [
+   {
+    "text": "skill no #3",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 580,
+  "ef": 596,
+  "lines": [
+   {
+    "text": "skill no #3",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   },
+   {
+    "text": "Claude Mem",
+    "y": 978,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 597,
+  "ef": 602,
+  "lines": [
+   {
+    "text": "this",
+    "y": 995,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 603,
+  "ef": 608,
+  "lines": [
+   {
+    "text": "gives",
+    "y": 995,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 609,
+  "ef": 617,
+  "lines": [
+   {
+    "text": "Claude",
+    "y": 995,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 618,
+  "ef": 626,
+  "lines": [
+   {
+    "text": "memory",
+    "y": 995,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 627,
+  "ef": 638,
+  "lines": [
+   {
+    "text": "across",
+    "y": 995,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 639,
+  "ef": 650,
+  "lines": [
+   {
+    "text": "sessions",
+    "y": 995,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 651,
+  "ef": 653,
+  "lines": [
+   {
+    "text": "so it",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 654,
+  "ef": 667,
+  "lines": [
+   {
+    "text": "remembers",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 668,
+  "ef": 679,
+  "lines": [
+   {
+    "text": "the project",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 680,
+  "ef": 685,
+  "lines": [
+   {
+    "text": "and",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 686,
+  "ef": 696,
+  "lines": [
+   {
+    "text": "files",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 697,
+  "ef": 702,
+  "lines": [
+   {
+    "text": "meaning",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 703,
+  "ef": 704,
+  "lines": [
+   {
+    "text": "you",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 705,
+  "ef": 710,
+  "lines": [
+   {
+    "text": "never",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 711,
+  "ef": 715,
+  "lines": [
+   {
+    "text": "have",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 716,
+  "ef": 733,
+  "lines": [
+   {
+    "text": "to read",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 734,
+  "ef": 743,
+  "lines": [
+   {
+    "text": "anything",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 744,
+  "ef": 752,
+  "lines": [
+   {
+    "text": "again",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 753,
+  "ef": 772,
+  "lines": [
+   {
+    "text": "skill no #4",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 773,
+  "ef": 785,
+  "lines": [
+   {
+    "text": "skill no #4",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   },
+   {
+    "text": "impeccable",
+    "y": 978,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 786,
+  "ef": 803,
+  "lines": [
+   {
+    "text": "skill no #4",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   },
+   {
+    "text": "for front-end",
+    "y": 978,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 804,
+  "ef": 814,
+  "lines": [
+   {
+    "text": "it gives",
+    "y": 762,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 815,
+  "ef": 826,
+  "lines": [
+   {
+    "text": "Claude",
+    "y": 762,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 827,
+  "ef": 835,
+  "lines": [
+   {
+    "text": "real",
+    "y": 762,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 836,
+  "ef": 847,
+  "lines": [
+   {
+    "text": "design",
+    "y": 762,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 848,
+  "ef": 854,
+  "lines": [
+   {
+    "text": "taste",
+    "y": 762,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 855,
+  "ef": 859,
+  "lines": [
+   {
+    "text": "by",
+    "y": 762,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 860,
+  "ef": 868,
+  "lines": [
+   {
+    "text": "pulling",
+    "y": 925,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 869,
+  "ef": 874,
+  "lines": [
+   {
+    "text": "from",
+    "y": 925,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 875,
+  "ef": 887,
+  "lines": [
+   {
+    "text": "premium",
+    "y": 925,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 888,
+  "ef": 904,
+  "lines": [
+   {
+    "text": "references",
+    "y": 925,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 905,
+  "ef": 911,
+  "lines": [
+   {
+    "text": "so",
+    "y": 925,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 912,
+  "ef": 923,
+  "lines": [
+   {
+    "text": "so your",
+    "y": 865,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 924,
+  "ef": 932,
+  "lines": [
+   {
+    "text": "UI",
+    "y": 865,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 933,
+  "ef": 943,
+  "lines": [
+   {
+    "text": "stops",
+    "y": 865,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 944,
+  "ef": 954,
+  "lines": [
+   {
+    "text": "looking",
+    "y": 865,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 955,
+  "ef": 965,
+  "lines": [
+   {
+    "text": "slop",
+    "y": 865,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 966,
+  "ef": 972,
+  "lines": [
+   {
+    "text": "vibe",
+    "y": 865,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 973,
+  "ef": 982,
+  "lines": [
+   {
+    "text": "vibe-coded",
+    "y": 865,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 983,
+  "ef": 1006,
+  "lines": [
+   {
+    "text": "skill no #5",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1007,
+  "ef": 1030,
+  "lines": [
+   {
+    "text": "skill no #5",
+    "y": 920,
+    "style": "serif-i",
+    "size": 48,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   },
+   {
+    "text": "Task Observer",
+    "y": 978,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1031,
+  "ef": 1035,
+  "lines": [
+   {
+    "text": "which",
+    "y": 970,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1036,
+  "ef": 1048,
+  "lines": [
+   {
+    "text": "quietly",
+    "y": 970,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1049,
+  "ef": 1063,
+  "lines": [
+   {
+    "text": "watches",
+    "y": 970,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1064,
+  "ef": 1075,
+  "lines": [
+   {
+    "text": "you work",
+    "y": 970,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1076,
+  "ef": 1091,
+  "lines": [
+   {
+    "text": "it learns",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1092,
+  "ef": 1105,
+  "lines": [
+   {
+    "text": "your style",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1106,
+  "ef": 1116,
+  "lines": [
+   {
+    "text": "and it",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1117,
+  "ef": 1132,
+  "lines": [
+   {
+    "text": "constantly",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1133,
+  "ef": 1145,
+  "lines": [
+   {
+    "text": "improves",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1146,
+  "ef": 1150,
+  "lines": [
+   {
+    "text": "your",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1151,
+  "ef": 1157,
+  "lines": [
+   {
+    "text": "other",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1158,
+  "ef": 1165,
+  "lines": [
+   {
+    "text": "skills",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1166,
+  "ef": 1171,
+  "lines": [
+   {
+    "text": "in the",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1172,
+  "ef": 1184,
+  "lines": [
+   {
+    "text": "background",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1185,
+  "ef": 1194,
+  "lines": [
+   {
+    "text": "for you",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1195,
+  "ef": 1202,
+  "lines": [
+   {
+    "text": "based",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1203,
+  "ef": 1212,
+  "lines": [
+   {
+    "text": "on that",
+    "y": 610,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     10,
+     10,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "sf": 1213,
+  "ef": 1219,
+  "lines": [
+   {
+    "text": "so if you",
+    "y": 945,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1220,
+  "ef": 1227,
+  "lines": [
+   {
+    "text": "want to",
+    "y": 945,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1228,
+  "ef": 1230,
+  "lines": [
+   {
+    "text": "try",
+    "y": 945,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1231,
+  "ef": 1236,
+  "lines": [
+   {
+    "text": "these",
+    "y": 945,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1237,
+  "ef": 1240,
+  "lines": [
+   {
+    "text": "for",
+    "y": 945,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1241,
+  "ef": 1252,
+  "lines": [
+   {
+    "text": "yourself",
+    "y": 945,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1253,
+  "ef": 1259,
+  "lines": [
+   {
+    "text": "just",
+    "y": 945,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1260,
+  "ef": 1278,
+  "lines": [
+   {
+    "text": "comment",
+    "y": 920,
+    "style": "serif-i",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ },
+ {
+  "sf": 1279,
+  "ef": 1332,
+  "lines": [
+   {
+    "text": "comment",
+    "y": 920,
+    "style": "serif-i",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   },
+   {
+    "text": "\"Claude\"",
+    "y": 980,
+    "style": "sans",
+    "size": 56,
+    "color": [
+     255,
+     255,
+     255
+    ],
+    "stroke": 4
+   }
+  ]
+ }
+]
