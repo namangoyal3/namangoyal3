@@ -6,6 +6,34 @@ no assets from the source video are copied. All talking-head shots are
 replaced with a neutral **placeholder avatar** so a real presenter can be
 dropped in later.
 
+## Motion
+
+Movement was measured from the source (onion-skin diffs + element tracking
+across frames) and reproduced:
+
+- Continuous Ken Burns push-in on every cut, tuned per scene.
+- The mascot walks in from the left edge on the title card (measured path),
+  with a leg-shuffle walk cycle and hop.
+- Element entrances: arrows draw in and icons pop staggered (diagram), the
+  "Find Skills" chip pops and its highlight sweeps the bullet (SKILL.md),
+  the Claude Code card slides up 66 px into place (measured), README pages
+  slide in then drift, steps fade-slide in (/impeccable).
+- Live animation: typing with cursor blink, toast slide-up, progress bar,
+  spinner, churning ASCII wave, red slash sweep, premium grid scroll, and
+  the Star History curve's measured two-phase reveal (flat tail until
+  ~23.7 s, then the climb).
+- The placeholder avatar idles (bob, sway, breathing) and carries **voice
+  bars driven by the narration loudness** (`voice_rms.json`, one value per
+  frame), so it reads as "talking" in sync with the audio.
+- Captions spring-pop in (0.65 → 1.06 → 1.0 scale).
+
+## Audio stems
+
+`audio/background-music.m4a` is the music bed separated from the narration
+(UVR MDX-Net instrumental model); `audio/voice-only.m4a` is the matching
+narration-only stem. `voice_rms.json` is the per-frame narration loudness
+envelope that drives the avatar's voice bars.
+
 ## What matches the source
 
 - Resolution, frame rate, duration, and every scene cut (21 scenes,
