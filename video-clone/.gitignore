@@ -1,0 +1,7 @@
+node_modules/
+out/
+.remotion/
+
+# The source clip is the input, not part of the deliverable.
+reference/source.mp4
+__pycache__/
