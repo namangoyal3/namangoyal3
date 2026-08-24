@@ -126,8 +126,9 @@ export const SupabaseMark: React.FC<{size?: number}> = ({size = 46}) => (
 );
 
 /** Strix's pixel "S" glyph. */
-export const StrixMark: React.FC<{size?: number; color?: string}> = ({
+export const StrixMark: React.FC<{size?: number; height?: number; color?: string}> = ({
   size = 150,
+  height,
   color = '#ffffff',
 }) => {
   const rows = [
@@ -140,7 +141,7 @@ export const StrixMark: React.FC<{size?: number; color?: string}> = ({
     '0011100',
   ];
   return (
-    <svg width={size} height={size} viewBox="0 0 7 7" shapeRendering="crispEdges">
+    <svg width={size} height={height ?? size} viewBox="0 0 7 7" preserveAspectRatio="none" shapeRendering="crispEdges">
       {rows.map((row, y) =>
         row.split('').map((v, x) =>
           v === '1' ? (

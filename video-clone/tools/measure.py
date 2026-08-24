@@ -82,7 +82,9 @@ PROBES = [
     ("supabase window", 520, lambda f: luma(f, 19, 255), (150, 750), extent),
     ("strix dash", 700, lambda f: luma(f, 19, 255), (150, 700), extent),
     ("ctx7 hero", 1340, lambda f: sat(f, 25, 200), (100, 800), biggest),
-    ("avatar head", 440, lambda f: luma(f, 0, 70), (600, 1000), biggest),
+    # The avatar is a grey bust, not dark hair, so the two clips need different
+    # masks to isolate the same silhouette. `pair` supplies one for each.
+    ("avatar head", 440, (lambda f: luma(f, 0, 70), lambda f: luma(f, 120, 200)), (600, 1000), biggest),
     ("screenshot: card", 250, lambda f: luma(f, 150, 249), (380, 780), extent),
     ("installer: caption", 80, lambda f: luma(f, 0, 120), (760, 1010), extent),
     ("display caption", 250, lambda f: luma(f, 0, 90), (790, 900), extent),
@@ -93,15 +95,16 @@ PROBES = [
     ("ramp window", 1050, lambda f: luma(f, 0, 120), (100, 560), biggest),
     ("claudemd sheet", 1000, lambda f: luma(f, 0, 80), (200, 900), biggest),
     ("installer icon only", 80, lambda f: mid(luma(f, 0, 90)), (380, 640), extent),
-    ("closeup head", 1250, lambda f: luma(f, 0, 70), (0, 900), extent),
+    ("closeup head", 1250, (lambda f: luma(f, 0, 70), lambda f: luma(f, 120, 200)), (0, 900), extent),
     ("display caption dark", 890, lambda f: luma(f, 200, 255), (740, 830), extent),
 ]
 
 
 def main():
     for name, fi, probe, (y0, y1), mode in PROBES:
-        a = mode(probe(src_frame(fi)), y0, y1)
-        b = mode(probe(clone_frame(fi)), y0, y1)
+        src_probe, clone_probe = probe if isinstance(probe, tuple) else (probe, probe)
+        a = mode(src_probe(src_frame(fi)), y0, y1)
+        b = mode(clone_probe(clone_frame(fi)), y0, y1)
         d = "" if not (a and b) else "  Δ=" + str(tuple(int(q) - int(p) for p, q in zip(a, b)))
         print(f"f{fi:<5} {name:<22} src={a}  clone={b}{d}")
 

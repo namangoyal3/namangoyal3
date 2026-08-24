@@ -4,6 +4,7 @@ import {C, F} from '../theme';
 import {TalkingHead} from '../components/AvatarPlaceholder';
 import {DarkBg, LeafWallBg} from '../components/Backdrops';
 import {Terminal} from '../components/Chrome';
+import {enter, settle} from '../motion';
 import {PixelCrab} from '../components/Icons';
 
 /**
@@ -197,7 +198,8 @@ export const SkillUiReverse: React.FC = () => {
 export const ClaudeMd: React.FC = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const sheet = spring({frame: frame - 4, fps, config: {damping: 15, mass: 0.7}});
+  // Source: the sheet appears at f984 (scene frame 8) and is static after.
+  const sheet = settle(frame - 8, 6);
 
   const md = [
     ['# CLAUDE.md', '#d97757'],
@@ -251,12 +253,7 @@ export const ClaudeMd: React.FC = () => {
           background: '#1a1310',
           boxShadow: '0 30px 60px rgba(0,0,0,0.28)',
           overflow: 'hidden',
-          transform: `translateY(${interpolate(sheet, [0, 1], [24, 0])}px) scale(${interpolate(
-            sheet,
-            [0, 1],
-            [0.94, 1]
-          )})`,
-          opacity: sheet,
+          ...enter(sheet, 1.03, 12),
         }}
       >
         <div style={{height: 20, background: '#241a15', display: 'flex', alignItems: 'center', gap: 6, paddingLeft: 9}}>

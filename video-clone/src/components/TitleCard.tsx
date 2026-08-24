@@ -2,6 +2,7 @@ import React from 'react';
 import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {C, F} from '../theme';
 import {SpotlightBg} from './Backdrops';
+import {settle} from '../motion';
 
 /**
  * "THE FIRST / <PLUGIN>" reveal card.
@@ -29,7 +30,9 @@ export const TitleCard: React.FC<{
   const {fps} = useVideoConfig();
 
   const ordIn = spring({frame, fps, config: {damping: 14, mass: 0.5}});
-  const iconIn = spring({frame: frame - 2, fps, config: {damping: 12, mass: 0.4}});
+  // Tracked in the source: the icon lands almost at full size and settles the
+  // last ~6% over 25 frames (Strix 399px -> 377px). It never pops.
+  const iconIn = settle(frame - 2, 25);
   const nameIn = spring({frame: frame - 12, fps, config: {damping: 15, mass: 0.6}});
 
   return (
@@ -51,7 +54,7 @@ export const TitleCard: React.FC<{
           letterSpacing: '0.01em',
           color: C.salmon,
           textShadow: '0 6px 18px rgba(219,140,120,0.35)',
-          transform: `scale(${interpolate(ordIn, [0, 1], [1.35, 1])})`,
+          transform: `scale(${interpolate(ordIn, [0, 1], [1.18, 1])})`,
           opacity: ordIn,
         }}
       >
@@ -88,7 +91,7 @@ export const TitleCard: React.FC<{
           width: '100%',
           display: 'flex',
           justifyContent: 'center',
-          transform: `scale(${interpolate(iconIn, [0, 1], [0.55, 1])})`,
+          transform: `scale(${interpolate(iconIn, [0, 1], [1.06, 1])})`,
           transformOrigin: `50% ${iconSize / 2}px`,
           opacity: interpolate(frame, [0, 4], [0, 1], {extrapolateRight: 'clamp'}),
         }}

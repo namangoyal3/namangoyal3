@@ -3,14 +3,18 @@ import {interpolate, useCurrentFrame} from 'remotion';
 import {C, F} from '../theme';
 import {Cue, cueAt, SCENES, SceneId} from '../data/timeline';
 
-/** Each new cue pops in over 4 frames — matches the snap of the source captions. */
-const pop = (frame: number, at: number) => {
-  const t = Math.min(Math.max(frame - at, 0), 4) / 4;
-  return {
-    scale: interpolate(t, [0, 0.6, 1], [0.86, 1.04, 1]),
-    opacity: interpolate(t, [0, 0.5], [0, 1], {extrapolateRight: 'clamp'}),
-  };
-};
+/**
+ * Captions are hard cuts in the source — no fade, no scale pop.
+ * Sampling the caption band across a cue boundary shows brightness switching in
+ * a single frame and then holding dead constant:
+ *
+ *   f529: 4954   (previous cue)   f532: 5685
+ *   f530: 5683   (new cue)        f533: 5687
+ *   f531: 5684                    f534: 5684
+ *
+ * So nothing here animates. Anything that eased in would read as an invented
+ * zoom, ~120 times over the film.
+ */
 
 type Tone = 'light' | 'dark';
 type Style = {
@@ -65,12 +69,7 @@ const sceneAt = (frame: number) => {
   return SCENES[0];
 };
 
-const WordCaption: React.FC<{cue: Cue; frame: number; s: Style}> = ({
-  cue,
-  frame,
-  s,
-}) => {
-  const {scale, opacity} = pop(frame, cue.at);
+const WordCaption: React.FC<{cue: Cue; s: Style}> = ({cue, s}) => {
   const dark = s.tone === 'dark';
   return (
     <div
@@ -86,8 +85,6 @@ const WordCaption: React.FC<{cue: Cue; frame: number; s: Style}> = ({
         letterSpacing: '-0.025em',
         color: dark ? C.white : C.ink,
         textShadow: dark ? '0 3px 20px rgba(0,0,0,0.6)' : 'none',
-        transform: `scale(${scale})`,
-        opacity,
       }}
     >
       {cue.lines.join(' ')}
@@ -95,12 +92,7 @@ const WordCaption: React.FC<{cue: Cue; frame: number; s: Style}> = ({
   );
 };
 
-const DisplayCaption: React.FC<{cue: Cue; frame: number; s: Style}> = ({
-  cue,
-  frame,
-  s,
-}) => {
-  const {scale, opacity} = pop(frame, cue.at);
+const DisplayCaption: React.FC<{cue: Cue; s: Style}> = ({cue, s}) => {
   const dark = s.tone === 'dark';
   const size = s.displaySize ?? 63;
   const stretch = s.displayStretch ?? 0.85;
@@ -131,8 +123,7 @@ const DisplayCaption: React.FC<{cue: Cue; frame: number; s: Style}> = ({
         textShadow: dark
           ? '0 6px 26px rgba(0,0,0,0.75), 0 2px 6px rgba(0,0,0,0.55)'
           : '0 5px 18px rgba(0,0,0,0.25)',
-        transform: `scale(${scale}) scaleX(${stretch})`,
-        opacity,
+        transform: `scaleX(${stretch})`,
         whiteSpace: 'pre',
       }}
     >
@@ -176,8 +167,8 @@ export const CaptionLayer: React.FC = () => {
 
   const s = STYLES[scene.id];
   return cue.kind === 'word' ? (
-    <WordCaption cue={cue} frame={frame} s={s} />
+    <WordCaption cue={cue} s={s} />
   ) : (
-    <DisplayCaption cue={cue} frame={frame} s={s} />
+    <DisplayCaption cue={cue} s={s} />
   );
 };

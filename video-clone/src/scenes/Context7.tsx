@@ -3,6 +3,7 @@ import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {C, F} from '../theme';
 import {CloseUpHead, TalkingHead} from '../components/AvatarPlaceholder';
 import {DarkBg} from '../components/Backdrops';
+import {enter, settle} from '../motion';
 
 /**
  * Scene 19 (f1135–1227). Context7's library leaderboard. Rows stream in from
@@ -21,55 +22,50 @@ const ROWS: [string, string, string, string, string][] = [
   ['Stripe', '/docs.stripe.com', '71.0', '79K', '1 week'],
 ];
 
+/** Column track, measured off the source's table. */
+const COLS = '131px 186px 70px 63px 70px 43px';
+
 export const Context7Table: React.FC = () => {
   const frame = useCurrentFrame();
   const shown = Math.min(ROWS.length, Math.max(0, Math.round((frame - 2) / 2.6)));
 
   return (
     <AbsoluteFill>
-      <DarkBg color="#0b0e14" />
-      <div style={{position: 'absolute', left: 78, top: 178, width: 604}}>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '122px 218px 68px 60px 68px 50px',
-            fontFamily: F.sans,
-            fontSize: 9.5,
-            color: '#5d6675',
-            paddingBottom: 8,
-          }}
-        >
-          {['Name', 'Source', 'Benchmark', 'Snippets', 'Update', 'Trust'].map((h) => (
-            <span key={h}>{h}</span>
-          ))}
+      <DarkBg color="#07080d" />
+      <div style={{position: 'absolute', left: 78, top: 176, width: 564}}>
+        <div style={{display: 'grid', gridTemplateColumns: COLS, fontFamily: F.sans, fontSize: 10, color: '#7c848c'}}>
+          <span>Name</span>
+          <span>Source</span>
+          <span style={{textAlign: 'right'}}>Benchmark</span>
+          <span style={{textAlign: 'right'}}>Snippets</span>
+          <span style={{textAlign: 'right'}}>Update</span>
+          <span style={{textAlign: 'right'}}>Trust</span>
         </div>
+
         {ROWS.slice(0, shown).map(([name, src, bench, snip, upd], i) => (
           <div
             key={name}
             style={{
               display: 'grid',
-              gridTemplateColumns: '122px 218px 68px 60px 68px 50px',
+              gridTemplateColumns: COLS,
               alignItems: 'center',
-              fontFamily: F.sans,
-              fontSize: 11,
-              color: '#c3cbd6',
-              padding: '7px 0',
-              borderTop: '1px solid #161b24',
+              height: 34.7,
               opacity: interpolate(frame - 2 - i * 2.6, [0, 5], [0, 1], {
                 extrapolateLeft: 'clamp',
                 extrapolateRight: 'clamp',
               }),
             }}
           >
-            <span style={{color: C.supabaseGreen}}>{name}</span>
-            <span style={{color: '#69727f', fontFamily: F.mono, fontSize: 9}}>⬡ {src}</span>
-            <span>{bench}</span>
-            <span>{snip}</span>
-            <span style={{color: '#8b93a0'}}>{upd}</span>
-            <span style={{color: '#4f9d76'}}>●●●</span>
+            <span style={{fontFamily: F.sans, fontWeight: 700, fontSize: 13, color: '#25d0a0'}}>{name}</span>
+            <span style={{fontFamily: F.mono, fontSize: 8.5, color: '#7c848c'}}>⌂ {src}</span>
+            <span style={{fontFamily: F.sans, fontSize: 12, color: '#eef1f4', textAlign: 'right'}}>{bench}</span>
+            <span style={{fontFamily: F.sans, fontSize: 12, color: '#eef1f4', textAlign: 'right'}}>{snip}</span>
+            <span style={{fontFamily: F.sans, fontSize: 12, color: '#eef1f4', textAlign: 'right'}}>{upd}</span>
+            <span style={{fontSize: 11, color: '#25d0a0', textAlign: 'right', letterSpacing: '0.12em'}}>✳✳✳</span>
           </div>
         ))}
       </div>
+
       <TalkingHead cardTop={804} tone="dark" />
     </AbsoluteFill>
   );
@@ -117,11 +113,22 @@ export const Context7Page: React.FC = () => {
   const frame = useCurrentFrame();
   // The source flips the page title into an orange selection at ~f1348.
   const selected = frame >= 34;
+  // Tracked: the page settles between f1314 and f1346, then holds still.
+  const t = settle(frame, 32);
 
   return (
     <AbsoluteFill>
-      <DarkBg color="#0b0e14" />
-      <div style={{position: 'absolute', left: 90, top: 226, width: 536}}>
+      <DarkBg color="#07080d" />
+      <div
+        style={{
+          position: 'absolute',
+          left: 90,
+          top: 226,
+          width: 536,
+          ...enter(t, 1.07, 12),
+          transformOrigin: '50% 30%',
+        }}
+      >
         <div
           style={{
             height: 172,

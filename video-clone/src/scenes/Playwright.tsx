@@ -1,5 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {enter, settle} from '../motion';
 import {C, F} from '../theme';
 import {TalkingHead} from '../components/AvatarPlaceholder';
 import {BlurredDeskBg, LeafWallBg} from '../components/Backdrops';
@@ -14,12 +15,6 @@ export const OpenBrowser: React.FC = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
 
-  // Panel tips and slides left over the final beat, matching the source.
-  const tip = interpolate(frame, [46, 62], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
   // The browser window slides out from behind the panel's left edge.
   const open = spring({frame: frame - 12, fps, config: {damping: 18, mass: 0.9}});
   const winW = interpolate(open, [0, 1], [0, 434]);
@@ -31,14 +26,13 @@ export const OpenBrowser: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          left: 74 - tip * 10,
-          top: 199 + tip * 34,
-          width: 574,
-          height: 325,
+          left: 74,
+          top: 199,
+          width: 573,
+          height: 324,
           borderRadius: 30,
           background: C.panelBeige,
           boxShadow: '0 24px 50px rgba(90,90,90,0.22)',
-          transform: `rotate(${tip * -4}deg)`,
           overflow: 'hidden',
         }}
       >
@@ -123,10 +117,6 @@ export const Screenshot: React.FC = () => {
   const camIn = spring({frame: frame - 22, fps, config: {damping: 13, mass: 0.5}});
   const shot1 = spring({frame: frame - 30, fps, config: {damping: 14, mass: 0.6}});
   const shot2 = spring({frame: frame - 36, fps, config: {damping: 14, mass: 0.6}});
-  const nudge = interpolate(frame, [12, 20], [0, 10], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
 
   return (
     <AbsoluteFill style={{background: C.white}}>
@@ -134,10 +124,10 @@ export const Screenshot: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          left: 226 + nudge,
-          top: 380,
-          width: 386,
-          height: 210,
+          left: 226,
+          top: 350,
+          width: 400,
+          height: 232,
           borderRadius: 10,
           background: '#fbf8f3',
           boxShadow: '0 18px 40px rgba(0,0,0,0.10)',
@@ -246,10 +236,9 @@ export const Screenshot: React.FC = () => {
 export const ConsoleErrors: React.FC = () => {
   const frame = useCurrentFrame();
 
-  const zoom = interpolate(frame, [0, 65], [1.05, 1.78], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
+  // Tracked in the source: the frame lands on x=66..645 / y=218..579 by f314
+  // (scene frame 18) and does not move again for the rest of the shot.
+  const t = settle(frame, 18);
   const framed = frame >= 14;
 
   return (
@@ -258,14 +247,15 @@ export const ConsoleErrors: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          left: 360,
-          top: 400,
-          transform: `translate(-50%,-50%) scale(${zoom}) rotate(-1.6deg)`,
+          left: 66,
+          top: 218,
+          ...enter(t, 1.05, 14),
+          transformOrigin: '50% 50%',
         }}
       >
         <Window
-          width={584}
-          height={364}
+          width={579}
+          height={361}
           dark={false}
           radius={12}
           bar="browser"
